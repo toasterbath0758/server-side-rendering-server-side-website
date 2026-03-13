@@ -92,6 +92,15 @@ section.collectionInfoHome {
     border-radius: var(--border-radius-1);
 }
 
+/* tag van de article preview */
+.tag {
+    align-self: flex-start;
+    font-size: var(--font-size-xs);
+    background: var(--background-color-5);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
 section.articleList {
     display: flex;
     flex-direction: column;
