@@ -43,6 +43,12 @@ app.get('/', async function (request, response) {
    response.render('index.liquid')
 })
 
+app.get('/nieuws', async function (request, response) {
+   // Render index.liquid uit de Views map
+   // Geef hier eventueel data aan mee
+   response.render('nieuws.liquid')
+})
+
 app.get('/nieuws/:slug', async function (request, response) {
    // Render index.liquid uit de Views map
    // Geef hier eventueel data aan mee
