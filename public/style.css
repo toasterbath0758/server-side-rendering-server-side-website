@@ -83,9 +83,42 @@ li.nav {
 }
 
 /* einde headernav */
+
+section.collectionInfoHome {
+    background: var(--background-color-4);
+    margin: 1em;
+    padding: 1em;
+    color: var(--text-color-1);
+    border-radius: var(--border-radius-1);
+}
+
 section.articleList {
     display: flex;
     flex-direction: column;
+}
+
+/* basis stijling van de article previews */
+section.articlePreview {  
+    background: var(--background-color-2);
+    border-radius: var(--border-radius-1);
+    padding: 1em;
+
+    h4 {
+        padding-bottom: 1em;
+    }
+}
+
+/* preview lijst van artikelen op de homepagina */
+section.articlePreview.home {
+    margin: 0 0.25em 0 1em;
+
+    img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* preview lijst van artikelen op de nieuwspagina */
 section.articlePreview.nieuws {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,7 +135,35 @@ section.articlePreview.nieuws {
         
     }
 }
+
+/* homepage nieuwsberichten */
+section.articleCollection {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+/* detailpagina nieuwsbericht */
+article.artikel {
+    border-radius: var(--border-radius-1);
+    padding: 1em;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: var(--font-size-m);
+        }
+}
+
 .error-img {
     width: 80vw;
     justify-content: center;
+}
+
+/* statische knop op zelfde plek altijd. nog stijlen */
+.terugKnop {
+    right: 1em;
 }
