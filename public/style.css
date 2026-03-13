@@ -1,3 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    margin-top: 1em;
+    padding: 0 1em 0 1em;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.mobileHeader {
+    place-content: start space-evenly;
+}
+
+section {
+    p {
+        width: 30ch;
+    }
+}
+
 section.articleList {
     display: flex;
     flex-direction: column;
