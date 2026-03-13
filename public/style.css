@@ -53,6 +53,36 @@ section {
 }
 
 /* einde filterheader */
+
+
+/* footer met nav */
+section.nav {
+    position: sticky;
+    bottom: 0;
+    place-content: center;
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
+    background: var(--background-color-2);
+
+    @media (min-width: 800px) {
+        /* top: 0; */
+    }
+}
+
+ul.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+li.nav {
+    font-size: var(--font-size-s);
+    font-weight: 600;
+}
+
+/* einde headernav */
 section.articleList {
     display: flex;
     flex-direction: column;
