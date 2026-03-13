@@ -1,3 +1,22 @@
+section.articleList {
+    display: flex;
+    flex-direction: column;
+section.articlePreview.nieuws {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: transparent;
+    border-top: solid;
+    border-radius: 0;
+
+    h4 {
+        padding-bottom: 0;
+    }
+
+    img {
+        width: 150px;
+        
+    }
+}
 .error-img {
     width: 80vw;
     justify-content: center;
